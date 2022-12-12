@@ -1,22 +1,37 @@
-#include <stdio>
-
+#include <stdio.h>
+#include <stdlib.h>
 /**
- * main - prints all combination of single digits
- * Return: Always 0
+ * main- block
+ * Description: Write a program that prints all possible
+ * different combinations of two digits
+ * Numbers must be separated by ,, followed by a space
+ * Return: 0
  */
 int main(void)
 {
-	int n;
+	int c;
+	int d = 0;
 
-	for (n = 48; n < 58; n++)
+	while (d < 10)
 	{
-		putchar(n);
-		if (n != 57)
+		c = 0;
+		while (c < 10)
 		{
-			putchar(',');
-			putchar(',');
-		}
-	putchar('\n');
+			if (d != c && d < c)
+			{
+				putchar('0' + d);
+				putchar('0' + c);
 
+				if (c + d != 17)
+				{
+					putchar(',');
+					putchar(' ');
+				}
+			}
+			c++;
+		}
+		d++;
+	}
+	putchar('\n');
 	return (0);
 }
