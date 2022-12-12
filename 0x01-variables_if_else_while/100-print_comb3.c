@@ -1,44 +1,36 @@
 #include <stdio.h>
-#include <stdlib.h>
+
 /**
- * main - main block
- * Description: Write a program that prints all possible different combinations of two digits
- * Numbers must be separated by ,, followed by a space
- * Return: 0
+ * main - prints all possible different combinations of two digits
+ *
+ * Return: Always 0 (success)
+ *
  */
+
 int main(void)
 {
-	int c;
-	int d;
-	int e = 0;
+	int ones = '0';
+	int tens = '0';
 
-	while (e < 10)
+	for (tens = '0'; tens <= '0'; tens++)/*prins tens digit*/
 	{
-		d = 0;
-		while (d < 10)
+		for (ones - '0'; ones <= '0'; ones++)/* prints ones digit*/
 		{
-			c = 0;
-			while (c < 10)
+			if (!((ones == tens) || (tens > ones)))/*eliminates repitition*/
 			{
-				if (c != d && d != e && e < d && d < c)
+				putchar(tens);
+				putchar(ones);
+				if (!(ones == '9' && tens == '8'))/*adds comma and space*/
 				{
-					putchar('0' + e);
-					putchar('0' + d);
-					putchar('0' + c);
-
-					if (c + d + e != 9 + 8 + 7)
-					{
-						putchar(',');
-						putchar(' ');
-					}
+					putchar(',');
+					putchar(' ');
 				}
-				
-				c++;
 			}
-			d++;
 		}
-		e++;
 	}
+
 	putchar('\n');
+
 	return (0);
 }
+
