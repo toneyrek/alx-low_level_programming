@@ -1,12 +1,5 @@
-#ifndef MAIN_H
-#define MAIN_H
-
-/**
- * File: main.h
- * Auth: Ibe Anthony
- * Desc: Header file containing prototypes for all functions
- * used in 0x06. C - More pointers, arrays and strings directory
- */
+#ifndef FILE_MAIN
+#define FILE_MAIN
 
 int _putchar(char c);
 char *_strcat(char *dest, char *src);
@@ -21,6 +14,5 @@ char *rot13(char *);
 void print_number(int n);
 char *infinite_add(char *n1, char *n2, char *r, int size_r);
 void print_buffer(char *b, int size);
-
 
 #endif
