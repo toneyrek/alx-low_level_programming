@@ -18,7 +18,7 @@ return (_evaluate(i + 1, n));
 else if (i + i == n) /*Condition base*/
 return (i);
 
-else
 return (-1);
 
+return (-1);
 }
