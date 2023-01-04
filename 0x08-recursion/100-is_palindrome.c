@@ -2,7 +2,7 @@
 
 /**
  * _strlen_recursion - size
- * @s: pointer to string
+ * @s: pointer to string params
  * Return: recursion
  */
 
