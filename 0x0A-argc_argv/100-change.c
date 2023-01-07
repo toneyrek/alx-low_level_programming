@@ -8,7 +8,7 @@
  * Return: Always 0
  */
 
-int main(nt argc, char *argv[])
+int main(int argc, char *argv[])
 {
 /*Declaring variables*/
 int position, total, change, aux;
